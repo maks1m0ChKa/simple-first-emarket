@@ -1,0 +1,133 @@
+/* Основные стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Светлый фон */
+}
+
+/* Navbar */
+.navbar {
+    background-color:  #141848; /* Синий цвет */
+    padding: 15px;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; /* Выравнивание вправо */
+}
+
+.nav-item {
+    margin-left: 20px; /* Отступ между пунктами меню */
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #141848;
+    color: white;
+    text-align: center;
+    padding: 60px 0; /* Отступ сверху и снизу */
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin: 20px 0; /* Отступ сверху и снизу */
+}
+
+.btn {
+    background-color: #ffc107; /* Желтый цвет кнопки */
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e0a800; /* Цвет кнопки при наведении */
+}
+
+/* Products Section */
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет карточкам располагаться в несколько строк */
+    justify-content: center; /* Центрирует карточки */
+    padding: 20px;
+}
+
+.product {
+    width: 300px; /* Фиксированная ширина карточки */
+    margin: 15px; /* Отступ между карточками */
+    border-radius: 10px; /* Закругленные края */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тень */
+    text-align: center; /* Центрирование текста */
+    background-color: white; /* Белый фон карточек */
+    transition: transform 0.3s; /* Анимация при наведении */
+}
+
+.product img {
+    border-radius: 10px 10px 0 0; /* Закругление верхних краев */
+    width: 100%; /* Полная ширина */
+    height: auto;
+}
+
+.product-title {
+    font-size: 1.5rem;
+    margin: 10px 0; /* Отступ сверху и снизу */
+    color: #007bff; /* Синий цвет заголовка */
+}
+
+.product-description {
+    font-size: 1rem;
+    color: #666; /* Серый цвет для описания */
+}
+
+/* Footer */
+.footer {
+    background-color: #343a40; /* Темный цвет для подвала */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around; /* Равномерное распределение контента */
+    padding: 20px;
+}
+
+.footer-col {
+    flex: 1; /* Каждая колонка занимает равное пространство */
+    padding: 10px; /* Отступ внутри колонок */
+}
+
+/* Анимация */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Общее выравнивание */
+h2, h5 {
+    margin: 10px 0; /* Отступы сверху и снизу */
+}
